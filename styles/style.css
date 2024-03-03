@@ -19,12 +19,13 @@
 .header {
   position: relative;
   inline-size: 100%;
-  min-block-size: 100vh;
+  block-size: 100vh;
+  min-block-size: 668px;
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
 }
 
-.header-decorated-zone::after {
+.decorated-zone::after {
   content: "";
   position: absolute;
   display: inline-block;
@@ -33,11 +34,11 @@
   border-right: 1px solid var(--decorated_corner-color);
   inline-size: 25px;
   block-size: 25px;
-  right: 0;
-  top: 20px;
+  right: 1px;
+  top: 21px;
 }
 
-.header-decorated-zone::before {
+.decorated-zone::before {
   content: "";
   position: absolute;
   display: inline-block;
@@ -186,11 +187,11 @@
   gap: 24px;
 }
 
-.section_why-article {
+.article {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 10px;
+  gap: 12px;
 }
 
 .paragraph_style {
@@ -204,7 +205,7 @@
   display: flex;
   flex-direction: column;
   inline-size: 100%;
-  margin-top: 85px;
+  margin-top: 80px;
   gap: 21px;
 }
 
@@ -213,23 +214,19 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  inline-size: calc(90% / 3);
+  inline-size: calc(95% / 3);
 }
 
 .section_what-text {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
-.section_what-article {
+.section-limited {
   flex-grow: 1;
-  flex-basis: 314px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  gap: 12px;
+  flex-basis: calc(95% / 3);
 }
 
 .prepreheader_style {
@@ -271,13 +268,6 @@
   flex-direction: column;
   justify-content: flex-start;
   gap: 20px;
-}
-
-.section_how-article {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  gap: 12px;
 }
 
 .content-section_may {
@@ -331,7 +321,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-block-size: 100vh;
+  block-size: 100vh;
+  min-block-size: 668px;
 }
 
 .footer-text {
@@ -360,32 +351,6 @@
   border: none;
 }
 
-.footer-decorated-zone::after {
-  content: "";
-  position: absolute;
-  display: inline-block;
-  background-color: transparent;
-  border-top: 1px solid var(--decorated_corner-color);
-  border-right: 1px solid var(--decorated_corner-color);
-  inline-size: 25px;
-  block-size: 25px;
-  right: 2px;
-  top: 22px;
-}
-
-.footer-decorated-zone::before {
-  content: "";
-  position: absolute;
-  display: inline-block;
-  background-color: transparent;
-  border-bottom: 1px solid var(--decorated_corner-color);
-  border-left: 1px solid var(--decorated_corner-color);
-  inline-size: 25px;
-  block-size: 25px;
-  bottom: 20px;
-  left: 0;
-}
-
 @media (768px<=width<1024px) {
   .header__theme-menu {
     justify-self: end;
@@ -406,11 +371,7 @@
     gap: 20px;
   }
 
-  .section_why-article {
-    gap: 12px;
-  }
-
-  .section_what-article {
+  .section-limited {
     flex-grow: initial;
     flex-basis: auto;
   }
@@ -425,12 +386,12 @@
 
   .content-section_how {
     margin-top: 84px;
-    margin-bottom: 78px;
+    margin-bottom: 82px;
     gap: 20px;
   }
 
-  .section_how-article {
-    gap: 14px;
+  .articlebox {
+    gap: 22px;
   }
 }
 
@@ -471,16 +432,17 @@
     gap: 21px;
   }
 
-  .section_why-article {
-    gap: 13px;
-  }
-
   .content-section_what {
     margin-top: 54px;
   }
 
   .section_what-text {
     flex-direction: column;
+    gap: 22px;
+  }
+
+  .section_what-text .article {
+    gap: 13px;
   }
 
   .section_what-title {
@@ -488,15 +450,14 @@
     inline-size: initial;
   }
 
-  .section_what-article {
-    gap: 15px;
+  .section-limited {
     flex-grow: initial;
     flex-basis: auto;
   }
 
   .content-section_how {
     flex-direction: column;
-    margin-top: 50px;
+    margin-top: 55px;
     margin-bottom: 50px;
     gap: 22px;
   }
@@ -522,23 +483,15 @@
     margin-bottom: 0;
   }
 
-  .header-decorated-zone::after {
-    top: 10px;
-  }
-
   .header__theme-decorated_element {
     top: 10px;
   }
 
-  .header-decorated-zone::before {
-    bottom: 10px;
-  }
-
-  .footer-decorated-zone::before {
-    bottom: 10px;
-  }
-
-  .footer-decorated-zone::after {
+  .decorated-zone::after {
     top: 10px;
+  }
+
+  .decorated-zone::before {
+    bottom: 10px;
   }
 }

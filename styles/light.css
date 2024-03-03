@@ -10,35 +10,39 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --accent-color: rgba(255, 141, 203, 1);
-  --h1-color: rgba(255, 194, 230, 1);
-  --h2-color: rgba(53, 52, 48, 1);
-  --h2-color-inverse: rgba(53, 52, 48, 1);
-  --p-color: rgba(53, 52, 48, 1);
-  --h3-color: rgba(53, 52, 48, 1);
+  --header__theme-title-color: rgba(255, 194, 230, 1);
+  --header__theme-article_text-color: rgba(53, 52, 48, 1);
+  --footer-text-color: rgba(255, 194, 230, 1);
+  --preheader-color: rgba(53, 52, 48, 1);
+  --preheader-color-inverse: rgba(53, 52, 48, 1);
+  --paragraph-color: rgba(53, 52, 48, 1);
+  --prepreheader-color: rgba(53, 52, 48, 1);
   --button-color: rgba(53, 52, 48, 1);
   --button-border-hover-color: rgba(50, 49, 45, 0.4);
-  --main-background-color: rgb(255, 241, 247);
+  --page-background-color: rgb(255, 241, 247);
   --decorated_corner-color: rgba(53, 52, 48, 1);
   --text-shadow-color: rgba(255, 0, 112, 1);
-  --header-background-image: url("../images/cover-image-light.png");
-  --header__theme-decorated_element_hidden: none;
+  --page-background-image: url("../images/cover-image-light.png");
+  --header__theme-decorated_element-display: none;
 }
 
 @media (prefers-color-scheme: light) {
   .page {
     /* Дублируем переменные светлой темы  */
     --accent-color: rgba(255, 141, 203, 1);
-    --h1-color: rgba(255, 194, 230, 1);
-    --h2-color: rgba(53, 52, 48, 1);
-    --h2-color-inverse: rgba(53, 52, 48, 1);
-    --p-color: rgba(53, 52, 48, 1);
-    --h3-color: rgba(53, 52, 48, 1);
+    --header__theme-title-color: rgba(255, 194, 230, 1);
+    --header__theme-article_text-color: rgba(53, 52, 48, 1);
+    --footer-text-color: rgba(255, 194, 230, 1);
+    --preheader-color: rgba(53, 52, 48, 1);
+    --preheader-color-inverse: rgba(53, 52, 48, 1);
+    --paragraph-color: rgba(53, 52, 48, 1);
+    --prepreheader-color: rgba(53, 52, 48, 1);
     --button-color: rgba(53, 52, 48, 1);
     --button-border-hover-color: rgba(50, 49, 45, 0.4);
-    --main-background-color: rgb(255, 241, 247);
+    --page-background-color: rgb(255, 241, 247);
     --decorated_corner-color: rgba(53, 52, 48, 1);
     --text-shadow-color: rgba(255, 0, 112, 1);
-    --header-background-image: url("../images/cover-image-light.png");
-    --header__theme-decorated_element_hidden: none;
+    --page-background-image: url("../images/cover-image-light.png");
+    --header__theme-decorated_element-display: none;
   }
 }

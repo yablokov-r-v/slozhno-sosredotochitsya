@@ -10,16 +10,18 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --accent-color: rgba(255, 0, 112, 1);
-  --h1-color: rgba(219, 0, 255, 1);
-  --h2-color: rgba(0, 0, 40, 1);
-  --h2-color-inverse: rgba(255, 0, 112, 1);
-  --p-color: rgba(241, 178, 206, 1);
-  --h3-color: rgba(0, 0, 40, 1);
+  --header__theme-title-color: rgba(219, 0, 255, 1);
+  --header__theme-article_text-color: rgba(0, 0, 40, 1);
+  --footer-text-color: rgba(219, 0, 255, 1);
+  --preheader-color: rgba(0, 0, 40, 1);
+  --preheader-color-inverse: rgba(255, 0, 112, 1);
+  --paragraph-color: rgba(241, 178, 206, 1);
+  --prepreheader-color: rgba(0, 0, 40, 1);
   --button-color: rgba(255, 0, 112, 1);
   --button-border-hover-color: rgba(255, 0, 112, 0.4);
-  --main-background-color: rgb(0, 0, 40);
+  --page-background-color: rgb(0, 0, 40);
   --decorated_corner-color: rgba(255, 0, 112, 1);
   --text-shadow-color: rgba(255, 0, 112, 1);
-  --header-background-image: url("../images/cover-image-dark.png");
-  --header__theme-decorated_element_hidden: block;
+  --page-background-image: url("../images/cover-image-dark.png");
+  --header__theme-decorated_element-display: block;
 }
